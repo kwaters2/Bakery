@@ -14,8 +14,15 @@
         <h2><%= product.name %></h2>
         <p>Price: <%= product.price %></p>
         <p>Calories per Serving: <%= product.caloriesPerServing %></p>
-        <p>Gluten Free: <%= product.glutenFree %></p>
-        <p>Product contains Nute: <%= product.containsNuts %></p>
+       <p>Gluten Free: 
+        <%  if product.glutenFree? %>Yes
+        <% else %>No 
+        <% end %></p>
+        <p>Product contains Nuts: 
+        <% if product.containsNuts? %>Yes
+        <% else %>No 
+        <% end %>
+        </p>
         <p><%= product.description %></p>
         <%= link_to (image_tag product.image, :class=>"productholsIm", style:"width:30%"), product %>
        <br>
