@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bakery</title>
+    <title><%=yield(:title) %> | Bakery</title>
     <%= csrf_meta_tags %>
     
     
@@ -10,8 +10,25 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  
 
   <body>
-    <%= yield %>
+  
+  <br>
+  
+  <h1><center>We make your sweet dreams come true...</center></h1>
+  
+   <div class="container"> 
+    <%= yield %> 
+    </div> 
+  <br>
+    <br>
+     <br>
+    <br>
+     <br>
+    <br>
+ 
+ 
+   
   </body>
 </html>
