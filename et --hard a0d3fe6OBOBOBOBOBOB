@@ -1,0 +1,177 @@
+[33mcommit 5a691aa8430cc22360da51b20cfaf68feba3741d[m[33m ([m[1;36mHEAD -> [m[1;32mproducts[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: ea49c75 06db329
+Author: Diana Nevedomska <diana_nevedomska@yahoo.com>
+Date:   Thu Apr 5 22:46:29 2018 +0000
+
+    Merge branch 'products'
+
+[33mcommit 06db32963c049586f963c44bb4fb4263214e2f73[m[33m ([m[1;31morigin/products[m[33m)[m
+Author: Diana Nevedomska <diana_nevedomska@yahoo.com>
+Date:   Thu Apr 5 22:43:45 2018 +0000
+
+    styling added to products
+
+[33mcommit ea49c751ec6e2db70ac1cd88031a0a718947ced6[m
+Merge: 2256e42 70ce5a0
+Author: Diana Nevedomska <diana_nevedomska@yahoo.com>
+Date:   Thu Apr 5 19:53:26 2018 +0000
+
+    db
+
+[33mcommit 70ce5a09fc8d4e99ab7fe3a164a64d527a544270[m
+Author: Diana Nevedomska <diana_nevedomska@yahoo.com>
+Date:   Thu Apr 5 19:47:35 2018 +0000
+
+    db
+
+[33mcommit 2256e4275f7bd0fcf7272d4cd64f8ce7cce25ae7[m
+Author: Diana Nevedomska <diana_nevedomska@yahoo.com>
+Date:   Wed Apr 4 22:16:07 2018 +0000
+
+    product db
+
+[33mcommit 65cef3549f430aa0579c9ab127e6f7233fc76397[m
+Author: Diana Nevedomska <diana_nevedomska@yahoo.com>
+Date:   Wed Apr 4 22:11:10 2018 +0000
+
+    product db
+
+[33mcommit b505acf4693bc605c91b1913e4055ac011f43fec[m
+Merge: 30c6b6e 35485d7
+Author: Diana Nevedomska <diana_nevedomska@yahoo.com>
+Date:   Wed Apr 4 22:06:48 2018 +0000
+
+    Merge Bakery
+
+[33mcommit 613d914e366d2a73dd7e287d1dea385171078a15[m
+Author: Diana Nevedomska <diana_nevedomska@yahoo.com>
+Date:   Mon Apr 2 21:39:20 2018 +0000
+
+    Products
+
+[33mcommit 30c6b6e92267e478558baf109a9cb0e17df98845[m
+Author: Diana Nevedomska <diana_nevedomska@yahoo.com>
+Date:   Mon Apr 2 19:56:47 2018 +0000
+
+    products
+
+[33mcommit 35485d7c8e356a549c2baf671fd643a21b13a7c2[m
+Merge: 3f5002d 03a3628
+Author: Diana <36017321+busja19@users.noreply.github.com>
+Date:   Fri Mar 30 22:29:04 2018 +0100
+
+    Merge pull request #3 from kwaters2/products
+    
+    If statement added by Gerry
+
+[33mcommit 03a362811e73dafc2a83126095fdc3590de5f4a6[m
+Author: Diana Nevedomska <diana_nevedomska@yahoo.com>
+Date:   Fri Mar 30 20:39:28 2018 +0000
+
+    If statement added
+
+[33mcommit 154edad95f24439b3ec8683fa4b23b88714867af[m
+Author: Diana Nevedomska <diana_nevedomska@yahoo.com>
+Date:   Fri Mar 30 20:05:01 2018 +0000
+
+    products
+
+[33mcommit 3f5002d750771be758e8778d3688e45ea8b73cfd[m
+Author: Kevin Waters <ec2-user@ip-172-31-24-92.us-east-2.compute.internal>
+Date:   Fri Mar 30 17:24:01 2018 +0000
+
+    update
+
+[33mcommit 346e3bfe86e466abe8b50702c699d4e7b243071b[m
+Merge: 8728fc3 dd1d500
+Author: Diana <36017321+busja19@users.noreply.github.com>
+Date:   Tue Mar 27 22:52:46 2018 +0100
+
+    Merge pull request #2 from kwaters2/products
+    
+    Products
+
+[33mcommit dd1d500bea9f60be9f8ef49ab24f9646ed80fa96[m
+Author: Diana Nevedomska <diana_nevedomska@yahoo.com>
+Date:   Tue Mar 27 21:41:00 2018 +0000
+
+    product page message
+
+[33mcommit d5b363bd41a8996c0fd0d38c1eef195cf8f8b081[m
+Author: Diana Nevedomska <diana_nevedomska@yahoo.com>
+Date:   Tue Mar 27 21:25:17 2018 +0000
+
+    added product route
+
+[33mcommit 8728fc3da4541b993170712732aec8e961dde8d5[m
+Author: Kevin Waters <ec2-user@ip-172-31-24-92.us-east-2.compute.internal>
+Date:   Tue Mar 27 20:59:10 2018 +0000
+
+    adding product route to master - amended mistake
+
+[33mcommit f0b05b7375747c426e69f5b5ff336c7e9ced77ce[m
+Author: Kevin Waters <ec2-user@ip-172-31-24-92.us-east-2.compute.internal>
+Date:   Tue Mar 27 20:57:40 2018 +0000
+
+    adding product route to master
+
+[33mcommit 519e11803ced706491dca0daab4394a84c4755fa[m
+Author: Diana Nevedomska <diana_nevedomska@yahoo.com>
+Date:   Tue Mar 27 20:50:30 2018 +0000
+
+    added product route
+
+[33mcommit 05cfee6abf16f041cf0c8a4f8f620cff8a53ed60[m
+Author: Diana Nevedomska <diana_nevedomska@yahoo.com>
+Date:   Tue Mar 27 20:47:18 2018 +0000
+
+    added product route
+
+[33mcommit c9852af164279aa13fed5b9e42c95c98d411a82a[m[33m ([m[1;31morigin/JoeCSS[m[33m)[m
+Merge: ae0f4c8 3b68785
+Author: Kevin Waters <ec2-user@ip-172-31-24-92.us-east-2.compute.internal>
+Date:   Tue Mar 27 20:18:56 2018 +0000
+
+    adding links to master
+
+[33mcommit 3b68785f2264d33a0e121cf1bd4e31c2a7e40908[m
+Author: Kevin Waters <ec2-user@ip-172-31-24-92.us-east-2.compute.internal>
+Date:   Tue Mar 27 20:05:57 2018 +0000
+
+    added links to application.html
+
+[33mcommit ae0f4c8c3383acabcce82668bbc5a82d713c4b46[m[33m ([m[1;31morigin/uploadBranchTestOnly[m[33m)[m
+Author: Diana Nevedomska <diana_nevedomska@yahoo.com>
+Date:   Mon Mar 26 18:53:17 2018 +0000
+
+    product catalog
+
+[33mcommit eed125ae466c9dbb6393091e68883c6c88410f42[m
+Author: Diana Nevedomska <diana_nevedomska@yahoo.com>
+Date:   Sun Mar 25 11:30:49 2018 +0000
+
+    products
+
+[33mcommit 32a2bc328a312d9c3f2c93c60261b3a58e62026a[m
+Author: Kevin Waters <ec2-user@ip-172-31-24-92.us-east-2.compute.internal>
+Date:   Sun Mar 25 10:19:34 2018 +0000
+
+    Routes added for static pages
+
+[33mcommit 58d4f7a999a7082d29db9f902c72dc56e0a795dd[m
+Author: Kevin Waters <ec2-user@ip-172-31-24-92.us-east-2.compute.internal>
+Date:   Sun Mar 25 09:43:36 2018 +0000
+
+    Added static pages for home, about us and contact us
+
+[33mcommit ea4c3bf27926de0d671aae727134578b7e4107c1[m
+Author: Kevin Waters <ec2-user@ip-172-31-24-92.us-east-2.compute.internal>
+Date:   Fri Mar 23 22:09:17 2018 +0000
+
+    test
+
+[33mcommit f754efa11578d1233e5a5ed2772e4ae9b7000a93[m
+Author: Kevin Waters <ec2-user@ip-172-31-24-92.us-east-2.compute.internal>
+Date:   Fri Mar 23 21:58:20 2018 +0000
+
+    initial commit
