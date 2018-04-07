@@ -4,6 +4,7 @@
     <title><%=yield(:title) %> | Bakery</title>
     <%= csrf_meta_tags %>
     
+<<<<<<< HEAD
     
 <<<<<<< HEAD
   <header class=nav>
@@ -16,6 +17,9 @@
     <h1>Welcome to the Bakery</h1>
 
 
+=======
+  
+>>>>>>> products
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -25,19 +29,16 @@
   
   <br>
   
-  <h1><center>We make your sweet dreams come true...</center></h1>
+ <%= render 'layouts/header'%> 
   
    <div class="container"> 
     <%= yield %> 
     </div> 
   <br>
-    <br>
-     <br>
-    <br>
-     <br>
-    <br>
+   
  
- 
+  <%= render 'layouts/footer'%> 
    
   </body>
 </html>
+
