@@ -3,20 +3,21 @@
   <head>
     <title><%=yield(:title) %> | Bakery</title>
     <%= csrf_meta_tags %>
-    	    <h1>Welcome to the Bakery</h1>
-    <!--	Bootstrap	-->						
-  	<link	rel="stylesheet"	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" >	
+    <h1>Welcome to the Bakery</h1>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-     <%= render 'layouts/header'%> 
-     <div class="container"> 
-        <%= yield %> 
-     </div> 
-     <%= render 'layouts/footer'%>
-     <!--	jQuery	(necessary	for	Bootstrap's	JavaScript	plugins)	-->				
-    <script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"> </script>				<!--	Include	all	compiled	plugins	(below),	or	include	individual	files	as	needed	-->				<script	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"> </script>	
-    <script	src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"> </script>
+  <header class=nav>
+        <li><a <%= link_to 'Home', root_path %>> Home </a></li>
+        <li><a <%= link_to 'About', about_path %>> About </a></li>
+        <li><a <%= link_to 'Contact', contact_path %>> Contact </a></li>
+        <li><a <%= link_to 'Products', products_path %>> Our Cakes </a></li>
+  </header>
+  <h1><center>We make your sweet dreams come true...</center></h1>
+  
+   <div class="container"> 
+    <%= yield %> 
+    </div> 
   </body>
 </html>

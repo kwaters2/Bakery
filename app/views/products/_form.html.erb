@@ -1,64 +1,75 @@
-<%= form_with(model: product, local: true) do |form| %>
-  <% if product.errors.any? %>
+<%= form_for @product, html: { multipart: true } do |f| %>
+  <% if @product.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
-
+      <h2>
+        <%= "#{pluralize(@product.errors.count, "error")} prohibited this photo from being saved:" %>
+      </h2>
       <ul>
-      <% product.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
+        <% @product.errors.full_messages.each do |msg| %>
+          <li>
+            <%= msg %>
+          </li>
+          <% end %>
       </ul>
     </div>
   <% end %>
-
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :product_name %>
+    <% f.label :image_content_type %>
+    <% f.text_field :image_content_type, id: :product_image_content_type %>
   </div>
-
-  <div class="field">
-    <%= form.label :price %>
-    <%= form.text_field :price, id: :product_price %>
+  <table style="width: 60%;">
+  <tr>
+    <div class="form-group">
+      <td class="labl">Image</td>
+      <td class="fullwid"><%= f.file_field :image, class: 'form-control' %></td>
+    </div>
+  </tr>
+  <tr>
+    <div class="form-group">
+      <td class="labl">Name</td>
+      <td class="fullwid"><%= f.text_field :name, id: :product_name %></td>
+    </div>
+  </tr>
+  <tr>
+    <div class="form-group">
+      <td class="labl">Price</td>
+      <td class="fullwid"><%= f.text_field :price, id: :product_price %></td>
+    </div>
+  </td>
+  <!--  select here -->
+  <tr>
+    <div class="form-group">
+      <td class="labl"><% f.label :category_id %></td>
+      <td class="fullwid"><%= select_tag(:category_id, options_for_select(@categories), :prompt => 'Select one!') %></td>
+    </div>
+  </tr>
+  <tr>
+  <div class="form-group">
+    <td class="labl">Calorie Per Serving</td>
+    <td class="fullwid"><%= f.number_field :caloriesPerServing, id: :product_caloriesPerServing %></td>
   </div>
-
-  <div class="field">
-
-  
-    
-    <%= select_tag(:category_id, options_for_select(@categories), :prompt => 'Select one!') %>
-    
-    
+  </tr>
+  <tr>
+    <div class="form-group">
+      <td class="labl">Gluten Free</td>
+      <td class="fullwid"><%= f.check_box :glutenFree, id: :product_glutenFree %></td>
+    </div>
+  </tr>
+  <tr>
+    <div class="form-group">
+      <td class="label">Contains Nuts</td>
+      <td class="fullwid"><%= f.check_box :containsNuts, id: :product_containsNuts %></td>
+    </div>
+  </tr>
+  <tr>
+    <div class="form-group">
+      <td class="labl">Description</td>
+      <td class="fullwid"><%= f.text_area :description, id: :product_description %></td>
+    </div>
+  </tr>
+  <tr>
+  <div class="form-group">
+        <td><%= f.submit 'Update Product', class: 'btn btn-default' %></td>
   </div>
-
-  <div class="field">
-    <%= form.label :caloriesPerServing %>
-    <%= form.number_field :caloriesPerServing, id: :product_caloriesPerServing %>
-  </div>
-
-  <div class="field">
-    <%= form.label :glutenFree %>
-    <%= form.check_box :glutenFree, id: :product_glutenFree %>
-  </div>
-
-  <div class="field">
-    <%= form.label :containsNuts %>
-    <%= form.check_box :containsNuts, id: :product_containsNuts %>
-  </div>
-
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description, id: :product_description %>
-  </div>
-
-  <div class="field">
-    <%= form.label :image %>
-    <%= form.text_field :image, id: :product_image %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-  
-
-
+  </tr>
 <% end %>

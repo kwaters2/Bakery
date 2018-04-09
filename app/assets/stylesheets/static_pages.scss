@@ -1,29 +1,4 @@
 // Place all the styles related to the Static_Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import "bootstrap";
-
-.nav {
-    background-color:#fff;
-    color:white;
-    list-style: none;
-    text-align: center;
-    padding:0 0 25px 0;
-}
-
-.nav > li {
-    display: inline-block;
-    padding-right: 25px;
-    float:right;
-    font-size:18px;
-}
-
-.nav > li > a {
-    text-decoration: none;
-    color: #000;
-}
-
-.nav > li > a:hover {
-    color: #c1c1c1;
-}
-
+//@import "bootstrap";
