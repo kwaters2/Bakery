@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row products">
+<h2>See full range of our delicious Cakes!</h2>
+
+    <% @products.each do |product| %>
+    
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+        <%= link_to (image_tag product.image, :class=>"img-responsive"), product %>
+        <h2><%= product.name %></h2>
+        <h4>Price: <%= product.price %></h4>
+        <p>Calories per Serving: <%= product.caloriesPerServing %></p>
+        <p>Gluten Free: 
+        <%  if product.glutenFree? %>Yes
+        <% else %>No 
+        <% end %></p>
+        <p>Product contains Nuts: 
+        <% if product.containsNuts? %>Yes
+        <% else %>No 
+        <% end %>
+        </p>
+        <p><%= product.description %></p>
+     
+
+       <br>
+       <br>
+       <br>
+        
+        
+        <p><%= link_to Category.find(product.category_id).name, category_path(product.category_id) %></p>
+        
+        <p><%= link_to 'Show', product, :class=>"btn btn-primary" %>
+        <%= link_to 'Edit', edit_product_path(product) %>
+       <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </p>
+      
+      </div>
+   <% end %>
+     </div>
+    
+<%= link_to 'New Product', new_product_path, :class=>"btn btn-primary" %>  
